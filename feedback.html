@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <h1>Форма обратной связи</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+        </p>
+
+        <p>
+            <label for="email">Электронная почта:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+        </p>
+
+        <p>
+            <label>Пол:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label>
+        </p>
+
+        <p>
+            <label for="country">Страна проживания:</label><br>
+            <select id="country" name="country" required>
+                <option value="">-- Выберите страну --</option>
+                <option value="ru">Россия</option>
+                <option value="by">Беларусь</option>
+                <option value="kz">Казахстан</option>
+                <option value="other">Другая</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я согласен с условиями обработки персональных данных</label>
+        </p>
+
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+</body>
+</html>
